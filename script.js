@@ -84,6 +84,8 @@ btnNew.addEventListener('click', function () {
     document
       .querySelector(`.player--${activePlayer}`)
       .classList.add('player--active');
+  } else {
+    diceEl.classList.add('hidden');
   }
   score0El.textContent = '0';
   score1El.textContent = '0';
